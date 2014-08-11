@@ -12,14 +12,17 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-repeat'
 
 runtime macros/matchit.vim
 
-syntax on
-filetype plugin indent on
-set number
-
 map <C-n> :NERDTreeToggle<CR>
+
 set ai sw=2 sts=2 et
 set cursorline 
+set number
 set rnu
+set backspace=indent,eol,start
+
+syntax on
+filetype plugin indent on
