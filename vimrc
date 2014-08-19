@@ -24,5 +24,15 @@ set number
 set rnu
 set backspace=indent,eol,start
 
+" status bar
+set laststatus=2                  " always show status bar
+set statusline=%F%m%r%h%w\ [%l,%c]\ [%L,%p%%] " put column/row number, total lines, and percentage in status
+
+augroup NrHighlight
+  autocmd!
+  autocmd WinEnter * hi StatusLine ctermfg=3 ctermbg=12
+  autocmd WinLeave * hi StatusLine ctermbg=240 ctermfg=12
+augroup END
+
 syntax on
 filetype plugin indent on
