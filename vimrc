@@ -35,6 +35,7 @@ set cursorline
 set number
 set rnu
 set backspace=indent,eol,start
+set hlsearch
 
 " status bar
 set laststatus=2                  " always show status bar
