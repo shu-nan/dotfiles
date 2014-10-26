@@ -14,6 +14,7 @@ Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
 Bundle 'rking/ag.vim'
+Bundle 'nelstrom/vim-visual-star-search'
 
 syntax on
 filetype plugin indent on
@@ -35,6 +36,7 @@ set cursorline
 set number
 set rnu
 set backspace=indent,eol,start
+set smartcase
 set hlsearch
 
 " status bar
