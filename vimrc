@@ -15,6 +15,8 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
 Bundle 'rking/ag.vim'
 Bundle 'nelstrom/vim-visual-star-search'
+Bundle 'tpope/vim-fugitive'
+Bundle 'airblade/vim-gitgutter'
 
 syntax on
 filetype plugin indent on
