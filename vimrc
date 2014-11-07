@@ -17,6 +17,7 @@ Bundle 'rking/ag.vim'
 Bundle 'nelstrom/vim-visual-star-search'
 Bundle 'tpope/vim-fugitive'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'bling/vim-airline'
 
 syntax on
 filetype plugin indent on
@@ -51,3 +52,8 @@ augroup NrHighlight
   autocmd WinEnter * hi StatusLine ctermfg=3
   autocmd WinLeave * hi StatusLine ctermbg=240 ctermfg=12
 augroup END
+
+" vim-airline
+let g:airline_left_sep = '»'
+let g:airline_right_sep = '«'
+let g:airline#extensions#tabline#enabled = 1
