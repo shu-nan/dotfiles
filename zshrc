@@ -13,3 +13,6 @@ source $ZSH/oh-my-zsh.sh
 if [ -f ~/._shrc ]; then
   source ~/._shrc 
 fi
+
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
