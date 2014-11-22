@@ -29,9 +29,7 @@ runtime macros/matchit.vim
 map <C-n> :NERDTreeToggle<CR>
 
 set t_Co=256
-colorscheme codeschool
-" overwrite codeschool theme NonText highlight
-hi NonText ctermfg=59 ctermbg=NONE cterm=NONE guifg=#414e58 guibg=#232c31 gui=NONE
+colorscheme babymate256
 
 set encoding=utf-8
 set ai sw=2 sts=2 et
