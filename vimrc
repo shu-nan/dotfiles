@@ -51,6 +51,9 @@ augroup NrHighlight
   autocmd WinLeave * hi StatusLine ctermbg=240 ctermfg=12
 augroup END
 
+highlight ExtraWhitespace ctermbg=darkred guibg=darkred
+match ExtraWhitespace /\s\+$/
+
 " vim-airline
 let g:airline_left_sep = '»'
 let g:airline_right_sep = '«'
