@@ -1,0 +1,11 @@
+[user]
+  email = shunan.sg@gmail.com
+  name = Shunan
+[color]
+  ui = true
+[color "status"]
+  added = blue
+  changed = yellow
+  untracked = white ul
+[color "diff"]
+  frag = magenta ul
