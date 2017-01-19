@@ -18,9 +18,10 @@ export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH=/usr/local/mysql/bin:$PATH
 
 # Oracle client
-export DYLD_LIBRARY_PATH="/usr/local/oracle/instantclient_10_2"
-export OCI_DIR="/usr/local/oracle/instantclient_11_2"
-export SQLPATH="/usr/local/oracle/instantclient_10_2"
+export DYLD_LIBRARY_PATH="/usr/local/oracle/instantclient_12_1"
+export ORACLE_HOME="/usr/local/oracle/instantclient_12_1"
+export OCI_DIR="/usr/local/oracle/instantclient_12_1"
+export SQLPATH="/usr/local/oracle/instantclient_12_1"
 export TNS_ADMIN="/usr/local/oracle/network/admin"
 export NLS_LANG="AMERICAN_AMERICA.UTF8"
 export PATH=$PATH:$DYLD_LIBRARY_PATH
@@ -32,4 +33,21 @@ export PATH=/usr/local/go/bin:$GOPATH/bin:$PATH
 alias rake='noglob rake'
 alias ctags='`brew --prefix`/bin/ctags'
 
+alias rp="bundle exec rake parallel:migrate parallel:spec"
+alias be="bundle exec"
+alias rdbm="be rake db:migrate && RAILS_ENV=test be rake db:migrate"
+alias ss="stty sane"
+alias bec="be cucumber INTERNET=false MISSING_FOCUS=true"
+alias grbc="git rebase --continue"
+
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# # jenv
+# export PATH="$HOME/.jenv/bin:$PATH"
+# eval "$(jenv init -)"
+
